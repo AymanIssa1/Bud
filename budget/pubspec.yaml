@@ -40,7 +40,7 @@ dependencies:
   google_sign_in: ^6.2.1
   googleapis: ^13.1.0
   universal_html: ^2.2.4
-  flutter_charset_detector: ^1.0.2
+  flutter_charset_detector: ^5.0.0
   file_picker:
     git:
       # This fork implements https://github.com/miguelpruivo/flutter_file_picker/issues/1404
@@ -64,7 +64,7 @@ dependencies:
   pausable_timer: ^3.1.0+3
   animated_fractionally_sized_box: ^2.0.1
   flutter_local_notifications: ^17.2.1+1
-  system_theme: ^3.0.0
+  system_theme: ^3.1.2
   firebase_core: ^3.2.0
   firebase_auth: ^5.1.2
   cloud_firestore: ^5.1.0
@@ -95,7 +95,7 @@ dependencies:
   confetti: ^0.7.0
   image_picker: ^1.1.2
   flutter_displaymode: ^0.6.0
-  notification_listener_service: ^0.3.3
+  notification_listener_service: ^0.3.4
   home_widget: ^0.7.0
   material_symbols_icons: ^4.2768.0
   app_links: ^6.1.4
