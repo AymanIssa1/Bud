@@ -33,6 +33,10 @@ android {
     namespace "com.budget.tracker_app"
     compileSdkVersion 34
 
+    buildFeatures {
+        buildConfig true
+    }
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
