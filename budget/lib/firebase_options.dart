@@ -47,12 +47,12 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBGiaRl72d4k3Ki0dh8ra-gU4v2z04CgIw',
-    appId: '1:267621253497:web:12558fe9abebf7fa842fa8',
-    messagingSenderId: '341862114057',
-    projectId: 'budget-reach',
-    authDomain: 'budget-app-flutter.firebaseapp.com',
-    storageBucket: 'budget-app-flutter.appspot.com',
+    apiKey: "AIzaSyBb68cA4WNJekfaY_hr9aaIk1Eh-_dbvu0",
+    appId: "1:341862114057:web:7ff5b3582312b0bedd29d8",
+    messagingSenderId: "341862114057",
+    projectId: "budget-reach",
+    authDomain: "budget-reach.firebaseapp.com",
+    storageBucket: "budget-reach.firebasestorage.app",
   );
 
   static const FirebaseOptions android = FirebaseOptions(
