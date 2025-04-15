@@ -49,18 +49,18 @@ class DefaultFirebaseOptions {
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyBGiaRl72d4k3Ki0dh8ra-gU4v2z04CgIw',
     appId: '1:267621253497:web:12558fe9abebf7fa842fa8',
-    messagingSenderId: '267621253497',
-    projectId: 'budget-app-flutter',
+    messagingSenderId: '341862114057',
+    projectId: 'budget-reach',
     authDomain: 'budget-app-flutter.firebaseapp.com',
     storageBucket: 'budget-app-flutter.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDNVDtwGJUHBZohwB2RDeUco-5hAGfx2bA',
-    appId: '1:267621253497:android:e7a2967eaf8dd072842fa8',
-    messagingSenderId: '267621253497',
-    projectId: 'budget-app-flutter',
-    storageBucket: 'budget-app-flutter.appspot.com',
+    apiKey: 'AIzaSyD2-t1B3cZTiD8SweB2VWVJr36-ajUcIyU',
+    appId: '1:341862114057:android:e0a3be01d82c7906dd29d8',
+    messagingSenderId: '341862114057',
+    projectId: 'budget-reach',
+    storageBucket: 'budget-reach.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(

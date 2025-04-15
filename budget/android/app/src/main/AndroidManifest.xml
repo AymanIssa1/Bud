@@ -29,7 +29,7 @@
   </queries>
     <application
         android:requestLegacyExternalStorage="true"
-        android:label="Cashew"
+        android:label="Budget Reach"
         android:icon="@mipmap/ic_launcher">
         <!-- Use the new rendering engine Impeller (experimental) -->
         <!-- <meta-data
@@ -48,8 +48,8 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="cashewapp.web.app" android:pathPrefix="/addTransaction"/>
-                <data android:scheme="https" android:host="cashewapp.web.app" android:pathPrefix="/addTransactionRoute"/>
+                <data android:scheme="https" android:host="budgetreach.web.app" android:pathPrefix="/addTransaction"/>
+                <data android:scheme="https" android:host="budgetreach.web.app" android:pathPrefix="/addTransactionRoute"/>
             </intent-filter>
 
             <!-- Specifies an Android theme to apply to this Activity as soon as
@@ -97,7 +97,7 @@
             <meta-data android:name="android.appwidget.provider"
                 android:resource="@xml/plus_widget" />
         </receiver>
-        <receiver android:name="TransferWidgetProvider"
+        <receiver android:name="com.example.budget.TransferWidgetProvider"
             android:exported="true" android:label="Transfer Shortcut">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />

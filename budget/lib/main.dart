@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:budget/functions.dart';
 import 'package:budget/pages/accountsPage.dart';
 import 'package:budget/pages/autoTransactionsPageEmail.dart';
@@ -45,6 +47,7 @@ void main() async {
   captureLogs(() async {
     WidgetsFlutterBinding.ensureInitialized();
     await Firebase.initializeApp(
+      name: "Budget Reach",
       options: DefaultFirebaseOptions.currentPlatform,
     );
     await EasyLocalization.ensureInitialized();

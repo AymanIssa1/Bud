@@ -1,17 +1,14 @@
-package com.budget.tracker_app
+package com.budgetreach.app
 
 import android.appwidget.AppWidgetManager
 import android.content.Context
 import android.content.SharedPreferences
-import android.graphics.BitmapFactory
 import android.net.Uri
-import android.view.View
 import android.widget.RemoteViews
-import es.antonborri.home_widget.HomeWidgetBackgroundIntent
 import es.antonborri.home_widget.HomeWidgetLaunchIntent
 import es.antonborri.home_widget.HomeWidgetProvider
 import android.graphics.Color
-import android.graphics.drawable.GradientDrawable
+import com.budgetreach.app.R
 
 class NetWorthPlusWidgetProvider : HomeWidgetProvider() {
 
@@ -28,7 +25,7 @@ class NetWorthPlusWidgetProvider : HomeWidgetProvider() {
                 }catch (e: Exception){}
 
                 try {
-                  setInt(R.id.widget_background, "setColorFilter",  android.graphics.Color.parseColor(widgetData.getString("widgetColorBackground", null)
+                  setInt(R.id.widget_background, "setColorFilter",  Color.parseColor(widgetData.getString("widgetColorBackground", null)
                   ?: "#FFFFFF"));
                 }catch (e: Exception){}
 
@@ -38,14 +35,14 @@ class NetWorthPlusWidgetProvider : HomeWidgetProvider() {
                 }catch (e: Exception){}
 
                 try {
-                  setInt(R.id.net_worth_amount, "setTextColor",  android.graphics.Color.parseColor(widgetData.getString("widgetColorText", null)
+                  setInt(R.id.net_worth_amount, "setTextColor",  Color.parseColor(widgetData.getString("widgetColorText", null)
                   ?: "#FFFFFF"))
-                  setInt(R.id.net_worth_transactions_number, "setTextColor",  android.graphics.Color.parseColor(widgetData.getString("widgetColorText", null)
+                  setInt(R.id.net_worth_transactions_number, "setTextColor",  Color.parseColor(widgetData.getString("widgetColorText", null)
                   ?: "#FFFFFF"))
                 }catch (e: Exception){}
 
                 try {
-                  setInt(R.id.plus_button, "setColorFilter",  android.graphics.Color.parseColor(widgetData.getString("widgetColorText", null)
+                  setInt(R.id.plus_button, "setColorFilter",  Color.parseColor(widgetData.getString("widgetColorText", null)
                   ?: "#FFFFFF"));
                 }catch (e: Exception){}
 
