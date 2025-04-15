@@ -295,61 +295,61 @@ class MorePages extends StatelessWidget {
                 ),
               ],
             ),
-          if (hasSideNavigation == false)
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Expanded(
-                  flex: 1,
-                  child: SettingsContainerOpenPage(
-                    isOutlinedColumn: true,
-                    openPage: EditWalletsPage(),
-                    title: navBarIconsData["accountDetails"]!.label.tr(),
-                    icon: navBarIconsData["accountDetails"]!.iconData,
-                    isOutlined: true,
-                  ),
-                ),
-                Expanded(
-                  flex: 1,
-                  child: SettingsContainerOpenPage(
-                    isOutlinedColumn: true,
-                    // If budget page not pinned to home, open budget list page
-                    openPage: appStateSettings["customNavBarShortcut0"] !=
-                                "budgets" &&
-                            appStateSettings["customNavBarShortcut1"] !=
-                                "budgets" &&
-                            appStateSettings["customNavBarShortcut2"] !=
-                                "budgets"
-                        ? BudgetsListPage(enableBackButton: true)
-                        : EditBudgetPage(),
-                    title: navBarIconsData["budgetDetails"]!.label.tr(),
-                    icon: navBarIconsData["budgetDetails"]!.iconData,
-                    iconScale: navBarIconsData["budgetDetails"]!.iconScale,
-                    isOutlined: true,
-                  ),
-                ),
-                Expanded(
-                  flex: 1,
-                  child: SettingsContainerOpenPage(
-                    isOutlinedColumn: true,
-                    openPage: EditCategoriesPage(),
-                    title: navBarIconsData["categoriesDetails"]!.label.tr(),
-                    icon: navBarIconsData["categoriesDetails"]!.iconData,
-                    isOutlined: true,
-                  ),
-                ),
-                Expanded(
-                  flex: 1,
-                  child: SettingsContainerOpenPage(
-                    isOutlinedColumn: true,
-                    openPage: EditAssociatedTitlesPage(),
-                    title: navBarIconsData["titlesDetails"]!.label.tr(),
-                    icon: navBarIconsData["titlesDetails"]!.iconData,
-                    isOutlined: true,
-                  ),
-                )
-              ],
-            ),
+          // if (hasSideNavigation == false)
+          //   Row(
+          //     crossAxisAlignment: CrossAxisAlignment.start,
+          //     children: <Widget>[
+          //       Expanded(
+          //         flex: 1,
+          //         child: SettingsContainerOpenPage(
+          //           isOutlinedColumn: true,
+          //           openPage: EditWalletsPage(),
+          //           title: navBarIconsData["accountDetails"]!.label.tr(),
+          //           icon: navBarIconsData["accountDetails"]!.iconData,
+          //           isOutlined: true,
+          //         ),
+          //       ),
+          //       Expanded(
+          //         flex: 1,
+          //         child: SettingsContainerOpenPage(
+          //           isOutlinedColumn: true,
+          //           // If budget page not pinned to home, open budget list page
+          //           openPage: appStateSettings["customNavBarShortcut0"] !=
+          //                       "budgets" &&
+          //                   appStateSettings["customNavBarShortcut1"] !=
+          //                       "budgets" &&
+          //                   appStateSettings["customNavBarShortcut2"] !=
+          //                       "budgets"
+          //               ? BudgetsListPage(enableBackButton: true)
+          //               : EditBudgetPage(),
+          //           title: navBarIconsData["budgetDetails"]!.label.tr(),
+          //           icon: navBarIconsData["budgetDetails"]!.iconData,
+          //           iconScale: navBarIconsData["budgetDetails"]!.iconScale,
+          //           isOutlined: true,
+          //         ),
+          //       ),
+          //       Expanded(
+          //         flex: 1,
+          //         child: SettingsContainerOpenPage(
+          //           isOutlinedColumn: true,
+          //           openPage: EditCategoriesPage(),
+          //           title: navBarIconsData["categoriesDetails"]!.label.tr(),
+          //           icon: navBarIconsData["categoriesDetails"]!.iconData,
+          //           isOutlined: true,
+          //         ),
+          //       ),
+          //       Expanded(
+          //         flex: 1,
+          //         child: SettingsContainerOpenPage(
+          //           isOutlinedColumn: true,
+          //           openPage: EditAssociatedTitlesPage(),
+          //           title: navBarIconsData["titlesDetails"]!.label.tr(),
+          //           icon: navBarIconsData["titlesDetails"]!.iconData,
+          //           isOutlined: true,
+          //         ),
+          //       )
+          //     ],
+          //   ),
           if (hasSideNavigation) SettingsPageContent(),
         ],
       ),

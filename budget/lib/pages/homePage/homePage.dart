@@ -259,34 +259,34 @@ class HomePageState extends State<HomePage> with TickerProviderStateMixin {
                   children: [
                     PreviewDemoWarning(),
                     if (useSmallBanner) SizedBox(height: 13),
-                    Row(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        useSmallBanner
-                            ? Expanded(
-                                child: HomePageWelcomeBannerSmall(
-                                  showUsername: showUsername,
-                                  showGreeting: showGreeting,
-                                  username: appStateSettings["username"] ?? "",
-                                ),
-                              )
-                            : SizedBox.shrink(),
-                        Tooltip(
-                          message: "edit-home".tr(),
-                          child: IconButton(
-                            padding: EdgeInsetsDirectional.all(15),
-                            onPressed: () {
-                              pushRoute(context, EditHomePage());
-                            },
-                            icon: Icon(appStateSettings["outlinedIcons"]
-                                ? Icons.more_vert_outlined
-                                : Icons.more_vert_rounded),
-                          ),
-                        ),
-                      ],
-                    ),
+                    // Row(
+                      // mainAxisSize: MainAxisSize.min,
+                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      // crossAxisAlignment: CrossAxisAlignment.center,
+                      // children: [
+                      //   useSmallBanner
+                      //       ? Expanded(
+                      //           child: HomePageWelcomeBannerSmall(
+                      //             showUsername: showUsername,
+                      //             showGreeting: showGreeting,
+                      //             username: appStateSettings["username"] ?? "",
+                      //           ),
+                      //         )
+                      //       : SizedBox.shrink(),
+                        // Tooltip(
+                        //   message: "edit-home".tr(),
+                        //   child: IconButton(
+                        //     padding: EdgeInsetsDirectional.all(15),
+                        //     onPressed: () {
+                        //       pushRoute(context, EditHomePage());
+                        //     },
+                        //     icon: Icon(appStateSettings["outlinedIcons"]
+                        //         ? Icons.more_vert_outlined
+                        //         : Icons.more_vert_rounded),
+                        //   ),
+                        // ),
+                      // ],
+                    // ),
                     // Wipe all remaining pixels off - sometimes graphics artifacts are left behind
                     Container(
                         height: 1,

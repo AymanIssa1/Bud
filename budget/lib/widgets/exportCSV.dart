@@ -169,7 +169,7 @@ class ExportCSV extends StatelessWidget {
             ".csv";
       } else {
         fileName =
-            "cashew-" + cleanFileNameString(DateTime.now().toString()) + ".csv";
+            "budget-reach-" + cleanFileNameString(DateTime.now().toString()) + ".csv";
       }
 
       await saveCSV(boxContext: boxContext, csv: csv, fileName: fileName);
